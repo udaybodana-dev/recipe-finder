@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css?v=2.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <h1>🍳 Recipe Finder</h1>
+        <div class="search-area">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn">Find</button>
+        </div>
+        <p class="try-hints">Try: Pizza, Burger</p>
+        <div class="action-links">
+            <a href="#" id="home-btn" class="action-btn"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#" id="view-saved" class="action-btn">View Saved Recipes (<span id="saved-count">0</span>)</a>
+        </div>
+    </div>
+
+    <div id="results-grid" class="recipe-grid">
+    </div>
+
+    <div id="recipe-modal" class="modal-overlay hidden">
+        <div class="modal-box">
+            <span id="close-modal" class="close-icon">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2.0"></script>
+    <footer class="designer-copyright">
+        © Designed & Developed by <span>Uday Bodana</span>
+    </footer>
+
+</body>
+
+</html>
