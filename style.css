@@ -1,0 +1,262 @@
+:root {
+    --bg: #fff7ed;
+    --p: #f97316;
+    --d: #431407;
+    --w: #fff
+}
+
+body {
+    background: var(--bg);
+    color: var(--d);
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 700px
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #9a3412;
+    margin-bottom: 25px
+}
+
+
+.search-area {
+    display: flex;
+    gap: 12px;
+    background: var(--w);
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+    border: 2px solid #ffedd5
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent
+}
+
+#search-btn {
+    background: var(--p);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700
+}
+
+#search-btn:hover {
+    background: #ea580c
+}
+
+.action-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.action-btn {
+    background: #ffedd5;
+    color: #c2410c;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.action-btn:hover {
+    background: #ea580c;
+    color: #fff;
+    border-color: #ea580c;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.recipe-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .04);
+    cursor: pointer;
+    border: 1px solid #ffedd5
+}
+
+.recipe-card:hover {
+    border-color: #ea580c
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover
+}
+
+.recipe-card h3 {
+    padding: 18px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #431407;
+    margin: 0
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(4px)
+}
+
+.modal-box {
+    background: #fff;
+    padding: 35px;
+    border-radius: 28px;
+    width: 90%;
+    max-width: 850px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative
+}
+
+.close-icon {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #9a3412
+}
+
+.hidden {
+    display: none !important
+}
+
+.save-btn {
+    background: #f97316;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px
+}
+
+.save-btn.saved {
+    background: #10b981
+}
+
+
+
+
+.ing-list {
+    padding-left: 20px;
+    color: #7c2d12;
+    column-count: 2;
+    margin-bottom: 20px
+}
+
+@media (max-width:600px) {
+    .ing-list {
+        column-count: 1
+    }
+}
+
+.designer-copyright {
+    margin-top: auto;
+    padding: 20px;
+    font-size: .8rem;
+    color: #94a3b8;
+    font-weight: 500
+}
+
+.designer-copyright span {
+    color: #3b82f6;
+    font-weight: 700
+}
+
+.try-hints {
+    margin-top: 10px;
+    color: #9a3412;
+    font-size: .85rem;
+    opacity: .8
+}
+
+.toast-msg {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #10b981;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    z-index: 1000
+}
+
+.cat-filter-select {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid #ffedd5
+}
+
+.grid-msg {
+    grid-column: 1/-1;
+    text-align: center
+}
+
+.modal-dish-title {
+    color: #ea580c;
+    margin: 0 0 15px
+}
+
+.modal-dish-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px
+}
+
+.modal-sub-title {
+    margin: 20px 0 10px
+}
+
+.modal-steps-text {
+    line-height: 1.6;
+    font-size: .95rem
+}
