@@ -260,3 +260,25 @@ h1 {
     line-height: 1.6;
     font-size: .95rem
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem !important;
+        white-space: nowrap;
+    }
+
+    .search-area {
+        padding: 4px !important;
+        gap: 6px !important;
+    }
+
+    #search-input {
+        padding: 10px 12px !important;
+        font-size: 0.9rem !important;
+    }
+
+    #search-btn {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
