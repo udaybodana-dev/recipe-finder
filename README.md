@@ -2,6 +2,8 @@
 
 A sleek and comprehensive recipe exploration platform. Discover dishes via hybrid real-time API searching, view exact ingredient metrics and step-by-step cooking instructions, and maintain your personal favorites list.
 
+`Documentation Update (2026): Added live deployment link -` https://udaybodana-dev.github.io/recipe-finder/
+
 ---
 
 ## ✨ Features
